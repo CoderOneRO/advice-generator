@@ -31,14 +31,82 @@ body {
   background-color: hsl(217, 19%, 38%);
   color: hsl(193, 38%, 86%);
   border-radius: 10px;
+  padding-top: 40px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 40px;
 }
 
 .id {
   color: hsl(150, 100%, 66%);
-  margin-top: 20px;
 }
 
 .advice {
   font-size: 28px;
-  margin: 20px;
+  margin: 20px 20px 20px 30px;
+}
+
+.line1 {
+  height: 1px;
+  width: 12rem;
+  background-color: hsl(193, 38%, 86%);
+  position: relative;
+  top: 0.5rem;
+  left: 1.5rem;
+}
+
+.line2 {
+  height: 1px;
+  width: 12rem;
+  background-color: hsl(193, 38%, 86%);
+  position: relative;
+  bottom: 0.9rem;
+  left: 16.4rem;
+}
+
+.btn {
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: hsl(150, 100%, 66%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 13.25rem;
+  top: 1.7rem;
+  border-radius: 50px;
+}
+
+.btn:hover {
+  animation: glow 1.5s linear infinite alternate;
+  cursor: pointer;
+}
+
+@keyframes glow{
+  to {
+    box-shadow: 0px 0px 20px 10px hsl(150, 100%, 66%);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .card {
+    width: 22rem;
+  }
+
+  .line1 {
+    width: 7.6rem;
+    left: 2rem;
+  }
+
+  .line2 {
+    width: 7.6rem;
+    left: 13rem;
+  }
+
+  .divider {
+    position: relative;
+    left: 0.3rem;
+  }
+
+  .btn {
+    left: 9.5rem;
+  }
 }
